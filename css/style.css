@@ -93,7 +93,7 @@ a{
 }
 
 .user-tools{
-    font-size:1.1rem;
+    font-size:1.2rem;
     color:#b1b1b1;
 }
 
@@ -151,6 +151,7 @@ a{
 .contain-search{
     display: flex;
     width: 90%;
+
 }
 
 .search .button{
@@ -159,6 +160,8 @@ a{
     justify-content: center;
     align-items: center;
     border:1px solid #888;
+    border-right:none;
+    border-radius: 5px 0 0 5px;
 }
 
 .search .button i{
@@ -169,7 +172,9 @@ a{
 .search input{
     width: 80%;
     padding: 0 .3rem;
-    /* border-radius: 0  2px  2px 0; */
+    border:1px solid #888;
+    border-left:none;
+    border-radius: 0  5px  5px 0;
 }
 
 /* CHAT USER  */
