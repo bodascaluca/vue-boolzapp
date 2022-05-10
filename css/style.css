@@ -147,16 +147,15 @@ a{
     display: flex;
 }
 
-.search button{
+.search .button{
     width: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: white; */
-    /* border-radius: 2px 0 0 2px; */
+    border:1px solid #888;
 }
 
-.search button i{
+.search .button i{
     color:var(--cl-icon-tx);
     width: 30px ;
     padding: .5rem 0;
@@ -170,7 +169,8 @@ a{
 
 /* CHAT USER  */
 .chat{
-    overflow-y: scroll;
+    overflow-y: auto;
+    height: calc(100% - 220px);
 }
 
 .chat-user{
