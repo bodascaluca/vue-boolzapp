@@ -72,11 +72,11 @@
 
                     <!-- ROW CHAT  -->
                     <div class="chat">
-                        <div class="chat-user active">
-                            <img class="chat-img" src="img/avatar_1.jpg" alt="">
+                        <div v-for="(item in contacts" class="chat-user active">
+                            <img class="chat-img" :src="'img/avatar' + item.avatar + '.jpg'" alt="">
                             <div class="chat-tx">
-                                <h4>Michele</h4>
-                                <p>Ultimo messggio inviato</p>
+                                <h4>{{ item.name }}</h4>
+                                <p>{{ item.messages.date }}</p>
                             </div>
                         </div>
 
