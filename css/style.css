@@ -260,6 +260,35 @@ a{
     width:100%;
     height: calc(100% - 140px);
     background-image: url(../img/mine.jpg);
+    padding:2rem;
+}
+
+.message{
+    margin: .5rem 0;
+}
+
+.direction-recived{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.direction-send{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.recived{
+    border-radius: 10px;
+    padding:.6rem 1.2rem;
+    background-color: white;
+    width: 40%;
+}
+
+.send{
+    border-radius: 10px;
+    padding:.6rem 1.2rem;
+    background-color: #d5f9bb;
+    width: 40%;
 }
 
 /* WRITE-MESSAGE  */
