@@ -5,8 +5,9 @@
     --border-grey:#dadada;
     --cl-icon-tx:#b7b9bb;
     --chat-tx:#d8cac4;
+    --clr-bk-wrt : #f3eeea;
+    --cl-wr-icon:#717679;
 }
-
 
 
 
@@ -235,7 +236,35 @@ a{
     align-items: center;
 }
 
+/* SEE-MESSAGE */
+.see-message{
+    width:100%;
+    height: calc(100% - 140px);
+    background-image: url(../img/mine.jpg);
+}
+
 /* WRITE-MESSAGE  */
+.write-message{
+    width: 100%;
+    height: 70px;
+    background-color: var(--clr-bk-wrt);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+} 
+
+.write-message input{
+    width: 430px;
+    padding: .5rem 1rem;
+}
+
+.write-message i{
+    font-size: 1.3rem;
+    color: var(--cl-wr-icon);
+}
+
+
+
 
 
 
