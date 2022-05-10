@@ -93,9 +93,12 @@ a{
 }
 
 .user-tools{
-    margin-right: .8rem;
     font-size:1.1rem;
     color:#b1b1b1;
+}
+
+.user-tools i{
+    margin: .4rem;
 }
 
 /* NOTIFICATION-SOUND  */
@@ -146,10 +149,11 @@ a{
 
 .contain-search{
     display: flex;
+    width: 90%;
 }
 
 .search .button{
-    width: 60px;
+    width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -158,12 +162,11 @@ a{
 
 .search .button i{
     color:var(--cl-icon-tx);
-    width: 30px ;
     padding: .5rem 0;
 }
 
 .search input{
-    width: 290px;
+    width: 80%;
     padding: 0 .3rem;
     /* border-radius: 0  2px  2px 0; */
 }
@@ -254,7 +257,7 @@ a{
 } 
 
 .write-message input{
-    width: 430px;
+    width: 80%;
     padding: .5rem 1rem;
 }
 
