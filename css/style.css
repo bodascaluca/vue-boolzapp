@@ -261,6 +261,7 @@ a{
     height: calc(100% - 140px);
     background-image: url(../img/mine.jpg);
     padding:2rem;
+    overflow-y:auto;
 }
 
 .message{
