@@ -83,6 +83,28 @@ img{
     color:#b1b1b1;
 }
 
+.notification-sound{
+    width: 100%;
+    height:80px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    background-color: #8edafb;
+    color:#8edafb; 
+}
+
+.notification-sound i{
+    background-color: white;
+    height: 50px ;
+    width:50px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: .8rem;
+    font-size:1.5rem;
+}
+
 
 /* ROW RIGHT */
 .row-right{
