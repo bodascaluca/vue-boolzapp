@@ -11,6 +11,7 @@
 
 
 
+
 /* RESET  */
 *{
     margin: 0;
@@ -190,6 +191,15 @@ a{
     align-items: center;
     border-bottom:1px solid var(--border-grey);
 }
+
+.chat-user.active{
+    background-color: #e9ebeb;
+}
+
+.chat-user:hover{
+    background-color: #e9ebeb;
+};
+
 
 .chat-img{
     margin-left: .8rem;
