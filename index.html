@@ -73,11 +73,16 @@
                     <!-- ROW CHAT  -->
                     <div class="chat">
                         <div v-for="(item, index) in contacts" class="chat-user">
-                            <img class="chat-img" :src="'img/avatar' + item.avatar + '.jpg'" alt="">
-                            <div class="chat-tx">
-                                <h4>{{ item.name }}</h4>
-                                <p>{{ item.messages.message }}</p>
-                            </div>
+                                <div class="chat-img">
+                                    <img class="chat-img" :src="'img/avatar' + item.avatar + '.jpg'" alt="">
+                                </div>
+                                <div class="chat-tx">
+                                    <div class="row-nm-clk">
+                                        <h4>{{ item.name }}</h4>
+                                        <div class="clock">12:00</div>
+                                    </div>
+                                    <p>Ultimo messaggio</p> 
+                                </div>
                         </div>
 
                         <div class="chat-user">
