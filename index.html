@@ -126,39 +126,28 @@
                     <!-- CHAT  -->
                     <div class="see-message">
 
-                        <div v-for="infodato in contacts[currentContact].messages" class="direction-recived">
+                        <div v-for="infodato in contacts[currentContact].messages" 
+                        :class="{'direction-recived' : infodato.status = received}">
                             <div class="message recived">
                                 <p>
                                     {{ infodato.message }}
                                 </p>
                                 <div class="message-time">
-                                    12:00
+                                    {{ infodato.date }}
                                 </div>
                             </div>
                         </div>
 
-                        <div class="direction-send">
+                        <div v-for="infodato in contacts[currentContact].messages" class="direction-send">
                             <div class="message send">
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates consectetur veritatis deleniti voluptate dolores dicta autem cum magnam, unde, dolor vel impedit optio dignissimos nostrum ipsam quos repudiandae ipsa enim.
+
                                 </p>
                                 <div class="message-time">
                                     12:00
                                 </div>
                             </div>
                         </div>
-
-                        <div class="direction-recived">
-                            <div class="message recived">
-                                <p>
-                                    Molto Salve
-                                </p>
-                                <div class="message-time">
-                                    12:00
-                                </div>
-                            </div>
-                        </div>
-
 
 
                     </div>

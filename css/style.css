@@ -327,6 +327,7 @@ a{
     color: var(--cl-icon-tx);
     font-size: .8rem;
     text-align: end;
+    margin-top:.3rem;
 }
 
 /* WRITE-MESSAGE  */
