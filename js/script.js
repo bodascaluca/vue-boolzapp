@@ -170,7 +170,8 @@ const app = new Vue(
                 }
             ],
             currentContact:0,
-            newMessage: ''
+            newMessage: '',
+            newRespons:'Ok',
         },
         methods: {
             openChat(item, index) {
@@ -196,7 +197,14 @@ const app = new Vue(
 
                 setTimeout(() => {
                     console.log('messaggio di risposta');
-                }, 1000)
+                    const addNewRespons = {
+                        message:this.newRespons,
+                        status: 'received',
+                        date: new Date()
+                    }
+                    this.contacts[this.currentContact].messages.push(addNewRespons);
+
+                }, 1000);
             }
         }
     }
