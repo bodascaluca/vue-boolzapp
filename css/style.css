@@ -7,6 +7,7 @@
     --chat-tx:#d8cac4;
     --clr-bk-wrt : #f3eeea;
     --cl-wr-icon:#717679;
+    --back-gridient:#dadbd4;
 }
 
 
@@ -49,6 +50,10 @@ a{
     background-color: var(--head-bk);
     padding-top:5vh;
     overflow: hidden;
+    background: linear-gradient(to bottom,  var(--head-bk) 0vh,
+                                            var(--head-bk) 15vh,
+                                            var(--back-gridient) 15vh,
+                                            var(--back-gridient) 100%);
 }
 
 /* .main-window{
