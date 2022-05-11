@@ -171,5 +171,16 @@ const app = new Vue(
             ],
             currentContact:0,
         },
+        methods: {
+            openChat(item, index) {
+                this.currentContact = index;
+                // console.log(item);
+                // this.contacts.forEach((contact) => {
+                //     contact.visible = false;
+                // });
+
+                // item.visible = true;
+            }
+        }
     }
 );

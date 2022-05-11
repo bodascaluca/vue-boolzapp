@@ -72,7 +72,7 @@
 
                     <!-- ROW CHAT  -->
                     <div class="chat">
-                        <div v-for="(item, index) in contacts" :class="{'contact--active' : currentContact === index}"  class="chat-user">
+                        <div v-for="(item, index) in contacts" :class="{'contact--active' : currentContact === index}"  class="chat-user" @click="openChat(item, index)">
                                 <div class="chat-img">
                                     <img class="chat-img" :src="'img/avatar' + item.avatar + '.jpg'" alt="">
                                 </div>
