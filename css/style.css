@@ -310,14 +310,18 @@ a{
     border-radius: 10px;
     padding:.6rem 1.2rem;
     background-color: white;
-    width: 40%;
+    
+    max-width: 60%;
+    min-width: 40%;
 }
 
 .send{
     border-radius: 10px;
     padding:.6rem 1.2rem;
     background-color: #d5f9bb;
-    width: 40%;
+    
+    max-width: 60%;
+    min-width: 40%;
 }
 
 /* WRITE-MESSAGE  */
