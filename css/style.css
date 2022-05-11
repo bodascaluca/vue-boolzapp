@@ -189,6 +189,7 @@ a{
     height: calc(100% - 200px);
 }
 
+
 .chat-user{
     width: 100%;
     height: 80px ;
@@ -203,7 +204,7 @@ a{
     align-items:center ;
 }
 
-.chat-user.active{
+.contact--active{
     background-color: #e9ebeb;
 }
 
