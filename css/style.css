@@ -310,7 +310,6 @@ a{
     border-radius: 10px;
     padding:.6rem 1.2rem;
     background-color: white;
-    
     max-width: 60%;
     min-width: 40%;
 }
@@ -319,9 +318,14 @@ a{
     border-radius: 10px;
     padding:.6rem 1.2rem;
     background-color: #d5f9bb;
-    
     max-width: 60%;
     min-width: 40%;
+}
+
+.message-time{
+    color: var(--cl-icon-tx);
+    font-size: .8rem;
+    text-align: end;
 }
 
 /* WRITE-MESSAGE  */
