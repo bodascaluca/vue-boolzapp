@@ -180,6 +180,17 @@ const app = new Vue(
                 // });
 
                 // item.visible = true;
+
+                
+            },
+            addMessage:function(){
+                console.log('sss')
+                const newMessage ={
+                    message:this.newMessage,
+                    status:'sent',
+                }
+                this.contacts[this.currentContact].message.push(newMessage);
+                this.newMessage = "";
             }
         }
     }
