@@ -126,25 +126,13 @@
                     <!-- CHAT  -->
                     <div class="see-message">
 
-                        <div v-for="infodato in contacts[currentContact].messages" 
-                        :class="{'direction-recived' : infodato.status = received}">
-                            <div class="message recived">
+                        <div class="clearfix" v-for="infodato in contacts[currentContact].messages">
+                            <div class="message" :class="infodato.status == 'sent' ? 'send' : 'recived'">
                                 <p>
                                     {{ infodato.message }}
                                 </p>
                                 <div class="message-time">
                                     {{ infodato.date }}
-                                </div>
-                            </div>
-                        </div>
-
-                        <div v-for="infodato in contacts[currentContact].messages" class="direction-send">
-                            <div class="message send">
-                                <p>
-
-                                </p>
-                                <div class="message-time">
-                                    12:00
                                 </div>
                             </div>
                         </div>

@@ -307,12 +307,19 @@ a{
     justify-content: flex-end;
 }
 
+.clearfix::after{
+    content: "";
+    display: table;
+    clear:both;
+}
+
 .recived{
     border-radius: 10px;
     padding:.6rem 1.2rem;
     background-color: white;
     max-width: 60%;
     min-width: 40%;
+    float: left;
 }
 
 .send{
@@ -321,6 +328,7 @@ a{
     background-color: #d5f9bb;
     max-width: 60%;
     min-width: 40%;
+    float: right;
 }
 
 .message-time{
