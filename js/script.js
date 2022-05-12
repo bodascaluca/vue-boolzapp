@@ -172,6 +172,7 @@ const app = new Vue(
             currentContact:0,
             newMessage: '',
             newRespons:'Ok',
+            search:'',
         },
         methods: {
             openChat(item, index) {
@@ -182,8 +183,6 @@ const app = new Vue(
                 // });
 
                 // item.visible = true;
-
-                
             },
             addMessage:function(){
                 console.log('sss')
@@ -205,7 +204,17 @@ const app = new Vue(
                     this.contacts[this.currentContact].messages.push(addNewRespons);
 
                 }, 1000);
-            }
+            },
+            filter:function (){
+                console.log("ss")
+                this.contacts.forEach(item => {
+                    if(this.name.includes(this.search)){
+                        this.visible = true;   
+                    } else {
+                        this.visible = false;
+                    }
+                });
+            },
         }
     }
 );

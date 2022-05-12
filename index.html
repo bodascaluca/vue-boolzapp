@@ -63,9 +63,9 @@
                     <div class="search">
                         <div class="contain-search">
 
-                                <span style="background:white;" class="button"><i class="fas fa-search"></i></span>
-                                <input type="text" placeholder="Cerca o inizia una nuova chat">
-                
+                                <label id="filter-text" style="background:white;" class="button"><i class="fas fa-search"></i></label>
+                                <input id="filter-text" type="text" placeholder="Cerca o inizia una nuova chat"  @keyup="filter"  v-model="search">
+                               
                         </div>
                     </div>
                     <!-- /ROW INPUT  -->
@@ -73,6 +73,7 @@
                     <!-- ROW CHAT  -->
                     <div class="chat">
                         <div v-for="(item, index) in contacts"
+                             v-if="item.visible"   
                              :class="{'contact--active' : currentContact === index}"  class="chat-user" 
                              @click="openChat(item, index)">
                                 <div class="chat-img">
