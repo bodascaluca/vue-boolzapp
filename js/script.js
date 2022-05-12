@@ -216,9 +216,9 @@ const app = new Vue(
                     }
                 });
             },
-            iconClicked(){
+            iconClicked(currentContact){
                 console.log('Ho preso il click')
-                this.showMe === false;
+                this.showMe[currentContact] == false;
             },
         }
     }
