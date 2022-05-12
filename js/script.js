@@ -173,7 +173,7 @@ const app = new Vue(
             newMessage: '',
             newRespons:'Ok',
             search:'',
-            showMe:false,
+            showMe:true,
         },
         methods: {
             openChat(item, index) {
@@ -217,8 +217,8 @@ const app = new Vue(
                 });
             },
             iconClicked(){
-                console.log('aa')
-                this.showMe === true;
+                console.log('Ho preso il click')
+                this.showMe === false;
             },
         }
     }
