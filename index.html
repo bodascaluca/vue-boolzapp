@@ -129,28 +129,19 @@
 
                         <div class="clearfix" v-for="infodato in contacts[currentContact].messages">
                             <div class="message" :class="infodato.status == 'sent' ? 'send' : 'recived'">
-                               <div class="miniRowMessage">
 
                                  <p class="theMessage">
                                      {{ infodato.message }}
                                  </p>
-
-                                 <!-- <label for="options"><i class="fas fa-angle-down"></i></label>
-                                 <section name="options" id="option">
-                                     <option value="info">Message info</option>
-                                     <option value="delete">Delete message</option>
-                                 </section> -->
                                  <ul class="iconSelect">
                                      <li><i class="fas fa-angle-down"></i>
                                         <ul class="tendina">
-                                            <li>Messaggio info</li>
-                                            <li>Deleted Message</li>
+                                                    <li>Messaggio info</li>
+                                                    <li>Deleted Message</li>
                                         </ul>
                                     </li>
-                                     
                                  </ul>
 
-                               </div>
                                 <div class="message-time">
                                     {{ infodato.date }}
                                 </div>
