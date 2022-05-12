@@ -173,6 +173,7 @@ const app = new Vue(
             newMessage: '',
             newRespons:'Ok',
             search:'',
+            showMe:false,
         },
         methods: {
             openChat(item, index) {

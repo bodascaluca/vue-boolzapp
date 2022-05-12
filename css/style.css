@@ -307,10 +307,14 @@ a{
 }
 
 li .tendina{
-    display: none;
+
     position: absolute;
     top: 15px;
     right: 3px;
+}
+
+li .none{
+    display: none;
 }
 
 .tendina li{
