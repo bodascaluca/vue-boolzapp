@@ -134,8 +134,10 @@
                                      {{ infodato.message }}
                                  </p>
                                  <ul class="iconSelect">
-                                     <li><i @click="iconClicked(currentContact)" class="fas fa-angle-down"></i>
-                                        <ul :class="{'none': showMe}" class="tendina ">
+                                     <li><i @click="iconClicked(infodato)" class="fas fa-angle-down"></i>
+                                        <ul
+                                         :class="{'none': infodato.showMe}"
+                                          class="tendina ">
                                              <li>Messaggio info</li>
                                              <li>Deleted Message</li>
                                         </ul>
