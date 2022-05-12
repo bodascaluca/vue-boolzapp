@@ -139,7 +139,7 @@
                                          :class="{'none': infodato.showMe}"
                                           class="tendina ">
                                              <li>Messaggio info</li>
-                                             <li>Deleted Message</li>
+                                             <li @click="removeMessagge(infodato, currentContact, index)">Deleted Message</li>
                                         </ul>
                                     </li>
                                  </ul>
@@ -173,6 +173,8 @@
 
         </section> -->
     </div>
+    <script src="http://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.8.25/plugin/customParseFormat.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

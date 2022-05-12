@@ -2,6 +2,9 @@
 
 Vue.config.devtools = true;
 
+console.log(window)
+dayjs.extend(window.dayjs_plugin_customParseFormat);
+
 const app = new Vue(
     {
         el:"#root",
@@ -195,6 +198,7 @@ const app = new Vue(
             newRespons:'Ok',
             search:'',
             showMe:true,
+            currentObjects:0,
         },
         methods: {
             openChat(item, index) {
@@ -211,7 +215,7 @@ const app = new Vue(
                 const addNewMessage = {
                     message: this.newMessage,
                     status: 'sent',
-                    date: new Date()
+                    date: this.getCurrentTime(),
                 }
                 this.contacts[this.currentContact].messages.push(addNewMessage);
                 this.newMessage = '';
@@ -221,7 +225,7 @@ const app = new Vue(
                     const addNewRespons = {
                         message:this.newRespons,
                         status: 'received',
-                        date: new Date()
+                        date: this.getCurrentTime(),
                     }
                     this.contacts[this.currentContact].messages.push(addNewRespons);
 
@@ -239,8 +243,22 @@ const app = new Vue(
             },
             iconClicked(infodato){
                 console.log('Ho preso il click')
-                infodato.showMe = false;
+                infodato.showMe = !infodato.showMe;
+            },
+
+
+            removeMessagge(infodato,currentContact,index ){
+                console.log('removethemessage')
+                infodato.forEach((item)=>{
+
+                })
+                infodato.  message[messages.message].splice(currentContact,1)
+            },
+            getCurrentTime(){
+                return dayjs().format('DD-MM-YYYY HH:mm:ss');
             },
         }
     }
 );
+
+const date = dayjs('28/03/2020 10:20:10', 'DD-MM-YYYY HH:mm:ss'  )
