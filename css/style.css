@@ -290,6 +290,28 @@ a{
     overflow-y:auto;
 }
 
+.miniRowMessage{
+    display: flex;
+    position: relative;
+}
+
+.iconSelect{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+li .tendina{
+    display: none;
+}
+
+
+ul li {
+    color: grey;
+    list-style:none;
+}
+
+
 .message{
     margin: .5rem 0;
 }
