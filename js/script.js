@@ -257,8 +257,14 @@ const app = new Vue(
             getCurrentTime(){
                 return dayjs().format('DD-MM-YYYY HH:mm:ss');
             },
+            getTime(date){
+                const dayjsDate = dayjs(date, 'DD-MM-YYYY HH:mm:ss');
+                return dayjsDate.format('HH:mm');
+
+            }
         }
     }
 );
 
-const date = dayjs('28/03/2020 10:20:10', 'DD-MM-YYYY HH:mm:ss'  )
+const date = dayjs('28/03/2020 10:20:10', 'DD-MM-YYYY HH:mm:ss');
+console.log(date.format('HH:mm'));
