@@ -216,6 +216,10 @@ const app = new Vue(
                     }
                 });
             },
+            iconClicked(){
+                console.log('aa')
+                this.showMe === true;
+            },
         }
     }
 );

@@ -134,7 +134,7 @@
                                      {{ infodato.message }}
                                  </p>
                                  <ul class="iconSelect">
-                                     <li><i class="fas fa-angle-down"></i>
+                                     <li><i @click="iconClicked" class="fas fa-angle-down"></i>
                                         <ul v-show="showMe" class="tendina ">
                                              <li>Messaggio info</li>
                                              <li>Deleted Message</li>

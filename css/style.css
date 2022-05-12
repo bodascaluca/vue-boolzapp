@@ -313,10 +313,6 @@ li .tendina{
     right: 3px;
 }
 
-li .none{
-    display: none;
-}
-
 .tendina li{
     /* position: absolute; */
     left: -40px;
