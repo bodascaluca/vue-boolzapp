@@ -208,10 +208,10 @@ const app = new Vue(
             filter:function (){
                 console.log("ss")
                 this.contacts.forEach(item => {
-                    if(this.name.includes(this.search)){
-                        this.visible = true;   
+                    if(item.name.toLowerCase().includes(this.search.toLowerCase())){
+                        item.visible = true;   
                     } else {
-                        this.visible = false;
+                        item.visible = false; 
                     }
                 });
             },
