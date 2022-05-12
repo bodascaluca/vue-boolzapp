@@ -290,20 +290,38 @@ a{
     overflow-y:auto;
 }
 
+.theMessage{
+    flex-grow: 1;
+}
+
 .miniRowMessage{
     display: flex;
     position: relative;
 }
 
 .iconSelect{
+    margin-left: .4rem;
     position: absolute;
-    top: 0;
     right: 0;
+    top: 0;
 }
 
 li .tendina{
-    display: none;
+    /* display: none; */
+    position: relative;
 }
+
+.tendina li{
+    position: absolute;
+    left: 0;
+    border: 1px solid red ;
+    padding: .6rem 0;
+    padding-left:.6rem ;
+    background-color: lightgrey;
+
+}
+
+
 
 
 ul li {
